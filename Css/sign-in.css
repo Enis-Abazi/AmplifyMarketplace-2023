@@ -1,0 +1,374 @@
+html,
+body {
+    overflow-x: hidden;
+    background-color: var(--new-main-color);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica";
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Helvetica 1";
+    src: url(../#Webfonts/Helvetica\ Neue\ LTW0697BlkCnObl.otf);
+}
+
+:root {
+    --sixth-new-main-color: #fef5ee;
+    --fifth-new-main-color: #e2a9ca;
+    --fourth-new-main-color: #10182f;
+    --third-new-main-color: #ffe0b9;
+    --second-new-main-color: #b295c9;
+    --new-main-color: #455799;
+    --grey-color: #666666;
+    --button-bg: #57b846;
+    --grey-background: #e6e6e6;
+    --main-color: #2695FF;
+    --green-color: #00d084;
+    --yellow-orange-color: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+    --red-orange-color: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+    --blue-darkblue-color: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+    --casual-purple-color: radial-gradient(#5b75f7, #3b54d5);
+    --casual-black-font-color: #343E47;
+    --tiny-letters-font-color: #AFAFAF;
+    --background-buttons-icons-color: #484848;
+    --info-product-font-color: #484848;
+    --info-product-font-color-tiny: #606060;
+    --big-title-color: #242424;
+    --casual-white-font-color: #FFFFFF;
+    --sliders-left-right-background-color: rgba(0, 0, 0, 0.5);
+    --triangle-color: #9b51e0;
+    --dark-blue-color: rgb(2, 3, 129);
+    --blue-mixed: radial-gradient(#5b75f7, #3b54d5);
+    --orange: radial-gradient(#ff5f4a, #dd3e29);
+    --yellow: radial-gradient(#fce406, #f9be00);
+    --after-white: #f9f9f9;
+    --input-color: #212529;
+}
+
+.blog {
+    position: relative;
+    padding: 50px 150px;
+}
+
+.blog .container {
+    padding: 150px 0;
+    position: relative;
+}
+
+.blog .box {
+    display: block;
+    text-align: center;
+    padding: 50px 0;
+    border: 1px solid var(--after-white);
+    background-color: var(--casual-white-font-color);
+    border-radius: 20px;
+}
+
+.blog .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.blog .row .col {
+    flex-basis: 50%;
+    position: relative;
+}
+
+.blog .row .col-img-center {
+    display: flex;
+    justify-content: center;
+}
+
+.blog .row .col .title {
+    position: relative;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.blog .row .col .title h2 {
+    font-size: 27px;
+    font-family: "Helvetica";
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color: var(--casual-black-font-color);
+    position: relative;
+}
+
+.blog .row .col .title h2::before {
+    content: " ";
+    position: absolute;
+    max-width: 200px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--fourth-new-main-color);
+    bottom: -10px;
+    left: 125px;
+    animation: leftWidth 4s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+}
+
+@keyframes leftWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.blog .row .col .img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.blog .row .col .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.blog .row .col .inputs-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+}
+
+.blog .row .col .inputs-flex .inputs-flex-col {
+    flex-basis: 50%;
+    position: relative;
+}
+
+.blog .row .col .inputs-flex .inputs-flex-col .input-email {
+    width: 100%;
+    position: relative;
+    padding: 20px 70px;
+}
+
+.blog .row .col .inputs-flex .inputs-flex-col .input-email input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-family: "Helvetica";
+    background: var(--grey-background);
+    color: var(--input-color);
+    outline: none;
+    border: 1px solid var(--grey-background);
+    border-radius: 50px;
+    position: relative;
+}
+
+.blog .row .col .inputs-flex .inputs-flex-col .input-email input:focus {
+    box-shadow: -3px 0px 30px -2px rgba(125, 237, 247, 1);
+    transform: scale(1.05);
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.blog .row .col .inputs-flex .inputs-flex-col .input-psw-div {
+    width: 100%;
+    position: relative;
+    padding: 20px 70px;
+}
+
+.blog .row .col .inputs-flex .inputs-flex-col .input-psw-div input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-family: "Helvetica";
+    background: var(--grey-background);
+    color: var(--input-color);
+    outline: none;
+    border: 1px solid var(--grey-background);
+    border-radius: 50px;
+    position: relative;
+}
+
+.blog .row .col .inputs-flex .inputs-flex-col .input-psw-div input:focus {
+    box-shadow: -3px 0px 30px -2px rgba(125, 237, 247, 1);
+    transform: scale(1.05);
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.blog .row .col .inputs-flex .inputs-flex-col i {
+    position: absolute;
+    z-index: 2;
+    right: 90px;
+    overflow: hidden;
+    bottom: 35px;
+    cursor: pointer;
+}
+
+.blog .row .col .btn {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.blog .row .col .btn a button {
+    padding: 12px 17px;
+    background: var(--fifth-new-main-color);
+    color: var(--casual-white-font-color);
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    line-height: 22.5px;
+    font-family: "Helvetica";
+    font-weight: 600;
+    max-width: 250px;
+    width: 100%;
+    border: 1px solid var(--fifth-new-main-color);
+    border-radius: 50px;
+}
+
+.blog .row .col .btn a button:hover {
+    box-shadow: -3px 0px 30px -2px var(--third-new-main-color);
+    transform: scale(1.05);
+    transition: 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.blog .row .col .create-acc {
+    display: block;
+    padding: 50px 0 15px 0;
+    text-align: center;
+}
+
+.blog .row .col .create-acc a span {
+    color: var(--grey-color);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    font-family: "Helvetica";
+    padding: 0 10px 0 0;
+}
+
+.blog .row .col .create-acc a span:hover {
+    font-size: 16px;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: var(--second-new-main-color);
+}
+
+@media only screen and (max-width:768px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .blog {
+        padding: 20px;
+    }
+    .blog .container {
+        padding: 20px;
+    }
+    .blog .row {
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 15px;
+    }
+    .blog .row .col {
+        width: 100%;
+    }
+    .blog .row .col .img img {
+        width: 150px;
+        height: 150px;
+    }
+    .blog .row .col .title h2::before {
+        width: 100%;
+        max-width: 100%;
+        left: 0;
+    }
+    .blog .row .col .inputs-flex .inputs-flex-col .input-email,
+    .blog .row .col .inputs-flex .inputs-flex-col .input-psw-div {
+        padding: 20px;
+    }
+    .blog .row .col .inputs-flex .inputs-flex-col i {
+        right: 40px;
+    }
+    #emailExistWarning {
+        left: 50px;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:991px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .blog {
+        padding: 50px;
+    }
+    .blog .row {
+        display: block;
+    }
+    .blog .row .col .title h2::before {
+        left: 0;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1023px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .blog {
+        padding: 25px;
+    }
+    .blog .row {
+        display: block;
+    }
+    .blog .row .col .title h2::before {
+        left: 0;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width:1024) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .blog {
+        padding: 50px;
+    }
+    .blog .row .col .title h2::before {
+        left: 0;
+        max-width: 100%;
+    }
+}

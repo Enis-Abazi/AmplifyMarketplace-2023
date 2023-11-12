@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="../Css/cart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/4a6ded598b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../Images/logo-color.png" type="image/x-icon" />
+</head>
+
+<body>
+    <section class="mobile-down">
+        <div class="container-mobile">
+            <div class="mobile-row">
+                <div class="mobile-col" id="mobile-col-search">
+                    <div class="flex">
+                        <div class="flex-col">
+                            <img src="../Images/search.png" alt="">
+                        </div>
+                        <div class="mobile flex-col">
+                            <h3>Search</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-col" id="mobile-col-cart">
+                    <div class="flex">
+                        <div class="flex-col">
+                            <img src="../Images/shopping-cart.png" alt="">
+                        </div>
+                        <div class="flex-col">
+                            <h3>Cart</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-col mobile-col-noborder" id="mobile-col-account">
+                    <div class="flex">
+                        <div class="flex-col">
+                            <img src="../Images/user.png" alt="">
+                        </div>
+                        <div class="flex-col">
+                            <h3 id="accountOrLogIn">Account</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <button class="chatbot-toggler">
+            <span class="material-symbols-rounded"><img src="../Images/message.png" alt=""></span>
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        <div class="chatbot">
+            <header class="chatbotHeader">
+                <h2>Chatbot</h2>
+                <span class="close-btn material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                    <p>Hi there 👋<br>How can I help you today?</p>
+                </li>
+            </ul>
+            <div class="chat-input">
+                <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+                <span id="send-btn" class="material-symbols-rounded"><img src="../Images/right-arrow.png" alt=""></span>
+            </div>
+        </div>
+
+    </div>
+    <section class="blog">
+        <header class="first-header">
+            <div class="container-first-header">
+                <div class="first-header-row">
+                    <div class="first-header-col">
+                        <div class="first-header-img-logo">
+                            <img id="logoClicked" src="../Images/Encropducts.png" alt="Logo">
+                        </div>
+                    </div>
+                    <div class="first-header-col">
+                        <div class="first-header-searchbar">
+                            <form id="searchBarForm">
+                                <button id="category-btn">Search </button>
+                                <input id="searchInput" type="text" placeholder="Enter Search Products" minlength="1" maxlength="30">
+                                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <div id="dropdownContainer" class="containerDropdown">
+                                    <div class="dropdown-search">
+                                        <div class="dropdown-row-search">
+                                            <div class="dropdown-row-col-search dropdown-row-col-search-left"></div>
+                                            <div class="dropdown-row-col-search dropdown-row-col-search-right">
+                                                <h4 id="dropdown-search-info"></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="burger">
+                            <div class="nav-burger">
+                                <input type="checkbox" id="hamburger-input" class="burger-shower" />
+                                <label id="hamburger-menu" for="hamburger-input">
+                               <nav id="sidebar-menu">
+                                    <ul>
+                                      <li class="homeBurgerList">Home
+                                        <div class="dropdownShop">
+                                            <div class="dropdownShopRow">
+                                                <div class="dropdownShopRowCol">
+                                                    <ul class="dropdownUlShop">
+                                                        <h3>Shop Shortcodes</h3>
+                                                        <li><i class="fa-solid fa-percent"></i> Sale Banners</li>
+                                                        <li><i class="fa-solid fa-list"></i> Categories Grid</li>
+                                                        <li><i class="fa-solid fa-sliders"></i> Client Slider</li>
+                                                        <li><i class="fa-solid fa-table"></i> Pricing Tables</li>
+                                                        <li><i class="fa-solid fa-cart-plus"></i> Shop Features</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dropdownShopRowCol">
+                                                    <ul class="dropdownUlShop">
+                                                        <h3>Shop shortpages</h3>
+                                                        <li><i class="fa-solid fa-chart-line"></i> Best Selling</li>
+                                                        <li><i class="fa-solid fa-star"></i> Featured</li>
+                                                        <li><i class="fa-solid fa-object-group"></i> By Category</li>
+                                                        <li><i class="fa-solid fa-clock"></i> Recent Added</li>
+                                                        <li><i class="fa-solid fa-bolt"></i> Sales Now</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dropdownShopRowCol">
+                                                    <ul class="dropdownUlShop">
+                                                        <h3>More pages</h3>
+                                                        <li><i class="fa-solid fa-cart-plus"></i> Main Shop</li>
+                                                        <li><i class="fa-solid fa-link"></i> Single Product</li>
+                                                        <li><i class="fa-regular fa-id-card"></i> My Account</li>
+                                                        <li><i class="fa-solid fa-basket-shopping"></i> My Basket</li>
+                                                        <li><i class="fa-solid fa-credit-card"></i> Checkout</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </li>
+                                      <li>Shop</li>
+                                      <li>Vendors</li>
+                                      <li class="shortCodesUpResponsive">Shortcodes
+                                         <div class="dropdownShop">
+                                        <div class="dropdownShopRow dropdownShopRow-2">
+                                            <div class="dropdownShopRowCol dropdownShopRowCol-2">
+                                                <ul class="dropdownUlShop">
+                                                    <li><i class="fa-solid fa-bars"></i> Accordion</li>
+                                                    <li><i class="fa-solid fa-briefcase"></i> Clients Grid</li>
+                                                    <li><i class="fa-solid fa-circle-notch"></i> Counters</li>
+                                                    <li><i class="fa-solid fa-chart-pie"></i> Piecharts</li>
+                                                    <li><i class="fa-solid fa-bag-shopping"></i> Products Grid</li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdownShopRowCol dropdownShopRowCol-2">
+                                                <ul class="dropdownUlShop">
+                                                    <li><i class="fa-solid fa-table"></i> Pricing Tables</li>
+                                                    <li><i class="fa-solid fa-credit-card"></i> Services</li>
+                                                    <li><i class="fa-solid fa-percent"></i> Bars</li>
+                                                    <li><i class="fa-solid fa-users"></i> Members</li>
+                                                    <li><i class="fa-solid fa-quote-right"></i> Testimoncial</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                      </li>
+                                      <li class="blogListResponsive">Blog
+                                        <div class="dropdownShop">
+                                            <div class="dropdownShopRow dropdownShopRow-2 dropdownShopRow-3">
+                                                <div class="dropdownShopRowCol dropdownShopRowCol-2 dropdownShopRowCol-3">
+                                                    <ul class="dropdownUlShop">
+                                                        <h3>Blog Types</h3>
+                                                        <li><i class="fa-solid fa-pen"></i> Boxed Layouts</li>
+                                                        <li><i class="fa-solid fa-chevron-right"></i> Posts Carsouels</li>
+                                                        <li><i class="fa-solid fa-filter"></i> News Filtered</li>
+                                                        <li><i class="fa-solid fa-table"></i> Blog Minimal</li>
+                                                        <li><i class="fa-solid fa-clone"></i> Simple Layout</li>
+                                                        <li><i class="fa-solid fa-file"></i> Article Details</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </li>
+                                      <li class="mediaListResponsive">Media
+                                        <div class="dropdownShop">
+                                            <div class="dropdownShopRow dropdownShopRow-2 dropdownShopRow-3 dropdownShopRow-4">
+                                                <div class="dropdownShopRowCol dropdownShopRowCol-2 dropdownShopRowCol-3 dropdownShopRowCol-4">
+                                                    <ul class="dropdownUlShop">
+                                                        <li> Media</li>
+                                                        <li> Projects</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </li>
+                                      <li>About</li>
+                                      <li>Contact</li>
+                                 </ul>
+                              </nav>
+                           </label>
+
+                                <div class="overlay"></div>
+
+                            </div>
+                        </div>
+                        <div class="responsive-icons">
+                            <div class="responsive-icons-row">
+                                <div class="responsive-icons-row-col">
+                                    <button id="responsiveUser">
+                                        <i class="fa-solid fa-user"></i>
+                                    </button>
+                                </div>
+                                <div class="responsive-icons-row-col">
+                                    <button id="responsiveHeart">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="responsive-icons-row-col">
+                                    <button id="responsiveBasket">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </button>
+                                </div>
+                                <div class="responsive-icons-row-col">
+                                    <button id="responsiveSearch">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first-header-col first-header-col-cart-displayed-none">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="second-header">
+            <div class="container-second-header">
+                <div class="second-header-row">
+                    <div class="second-header-col second-header-col-70">
+                        <ul id="navigation">
+                            <a href="">
+                                <li class="homeList">Home</li>
+                            </a>
+                            <a href="">
+                                <li class="mediaList">Media
+                                    <div class="dropdownShop">
+                                        <div class="dropdownShopRow dropdownShopRow-2 dropdownShopRow-3 dropdownShopRow-4">
+                                            <div class="dropdownShopRowCol dropdownShopRowCol-2 dropdownShopRowCol-3 dropdownShopRowCol-4">
+                                                <ul class="dropdownUlShop">
+                                                    <a href="https://www.instagram.com/ennis.abazii_/" id="instagramLink"> Instagram</a>
+                                                    <a href="https://www.youtube.com/channel/UC5RK8BmT4jPXh4cpxykIC9w" id="youtubeLink"> Youtube</a>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="second-header-col second-header-col-30">
+                        <div class="dropdown">
+                            <a href="sign-in.html" id="importantClosedLink">
+                                <h3 id="sign-in-or-signed">Sign In</h3>
+
+                            </a>
+                            <div class="login-setup">
+                                <a href="sign-up.html" id="logOutLink">
+                                    <h3 id="logOutHeader">Log Out</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="center-information">
+            <div class="row">
+                <div class="col-left">
+                    <div class="title-flex">
+                        <div class="title">Shopping Cart</div>
+                        <div class="items" id="itemsCount">0 items</div>
+                    </div>
+
+                </div>
+                <div class="col-right">
+                    <div class="title">
+                        <h1>Summary</h1>
+                    </div>
+                    <div class="flexed">
+                        <div class="col-flexed">
+                            <h3 id="itemsTotal">Items 0</h3>
+                        </div>
+                        <div class="col-flexed">
+                            <h3 id="totalPrice">$ 132.00</h3>
+                        </div>
+                    </div>
+                    <div class="shippingDiv">
+                        <h2>Shipping</h2>
+                        <div class="shipping">
+                            <h4>Standard Delivery - $5.00</h4>
+                        </div>
+                    </div>
+                    <div class="codeDiv">
+                        <h2>Give Code</h2>
+                        <form>
+                            <input type="text" placeholder="Enter your code" id="codeDiscountInput" class="code-input">
+                        </form>
+                        <button id="sendRequestForCodeDiscountButton" class="sendRequestForCodeDiscountButton">Approve code!</button>
+                    </div>
+                    <div class="totalPriceDiv">
+                        <div class="totalPriceCol">
+                            <h2>Total Price</h2>
+                        </div>
+                        <div class="totalPriceCol">
+                            <h3 id="finalTotalPrice">$137.00</h3>
+                        </div>
+                    </div>
+                    <div class="orderDiv">
+                        <button id="orderNow" class="orderNow">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="myLoader">
+                <span class="loader"></span>
+            </div>
+            <div class="thisLoader">
+                <span class="loaderOne">Product Purcashed Successfully! Thank You!</span>
+            </div>
+            <div class="modalContainer">
+                <div class="row-modal">
+                    <div class="flex-check flex-check-radius">
+                        <div class="flex-col-check">
+                            <form>
+                                <input type="radio" id="firstRadio">
+                                <label for="firstRadio" id="firstRadioLabel"></label>
+                                <h3>Paypal</h3>
+                            </form>
+
+                        </div>
+                        <div class="flex-col-check">
+                            <div class="img-company">
+                                <img src="../Images/paypal 1.png" class="paypalImg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-check">
+                        <div class="flex-col-check">
+                            <form>
+                                <input type="radio" id="secondRadio">
+                                <label for="secondRadio" id="secondRadioLabel"></label>
+                                <h3>Debit/ Credit Card</h3>
+                            </form>
+
+                        </div>
+                        <div class="flex-col-check">
+                            <div class="img-company">
+                                <img src="../Images/visa.png" alt="">
+                                <img src="../Images/mastercard.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-info">
+                        <div class="flex-info-col">
+                            <h3>Name</h3>
+                        </div>
+                        <div class="flex-info-col">
+                            <form>
+                                <input type="text" placeholder="e.g. Richard Bovell" required id="nameInput">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex-info">
+                        <div class="flex-info-col">
+                            <h3>Card Number</h3>
+                        </div>
+                        <div class="flex-info-col">
+                            <form>
+                                <input type="number" placeholder="8888-8888-8888-8888" required id="cardNumberInput" minlength="1" maxlength="16">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex-date">
+                        <div class="flex-date-col">
+                            <div class="row-date">
+                                <div class="row-date-col">
+                                    <h3>Expiry</h3>
+                                </div>
+                                <div class="row-date-col">
+                                    <form class="slashForm">
+                                        <input type="number" placeholder="00" id="expiryDate" required minlength="2" maxlength="2">
+                                        <input type="number" placeholder="2026" id="expiryYear" required minlength="4" maxlength="4">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-date-col">
+                            <div class="row-date">
+                                <div class="row-date-col">
+                                    <h3>CVC/CVV</h3>
+                                </div>
+                                <div class="row-date-col">
+                                    <form class="slashForm2">
+                                        <input type="number" placeholder="123" id="cvcInput" max="3" required>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-date-col">
+                            <div class="info-icon">
+                                <img src="../Images/information.png" class="informationIcon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="confirm-pay">
+                    <button id="confirmAndPay" class="confirmAndPay"><img src="../Images/data-protection.png" class="dataProtectionLogo"> Confirm and Pay</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="../Javascript/cart.js"></script>
+</body>
+
+</html>
